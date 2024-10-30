@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.boundelem{
+    transform: translateY(100%);
+}
+
+.minicircle{
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 12px;
+    height: 12px;
+    position: fixed;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav h4{
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.heading{
+    /* padding: 40px 45px; */
+    padding: 4vw 3vw;
+}
+
+.heading h1{
+    font-size: 9vw;
+    text-transform: uppercase;
+    line-height: 1;
+    opacity: .6;
+    font-weight: 600;
+}
+
+.head2{
+    width: fit-content;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.heading .head2 h1{
+    margin-left: 10vw;
+}
+
+.heading .head2 h5{
+    text-transform: uppercase;
+    font-size: .9vw;
+    font-weight: 500;
+}
+
+.short{
+    padding-right: 2.2vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.short h4{
+    text-transform: uppercase;
+    margin-top: .7vw;
+    font-weight: 500;
+}
+
+.herofooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    width: 100%;
+    position: absolute;
+    bottom: 1.2vw;
+    left: 0px;
+}
+
+.herofooter a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8vw;
+    font-weight: 600;
+}
+
+.icons{
+    display: flex;
+    gap: 5px;
+}
+
+.icons .circle{
+    width: 27px;
+    height: 27px;
+    background-color: #807979;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second{
+    width: 100%;
+    background-color: black;
+    padding: 10vw 10vw 0vw 3vw;
+}
+
+.elem{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #888;
+    width: 100%;
+    padding: 4vw 0 4vw 0;
+}
+
+
+.elem h1{
+    font-size: 7vw;
+    opacity: .6;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.elemlast{
+    border-bottom:  1px solid #888;
+}
+
+.elem img{
+    height: 140%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0;
+}
+
+.about{
+    width: 100%;
+    background-color: black;
+    padding: 10vw 10vw;
+    padding-left: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.about img{
+    width: 230px;
+}
+
+.about .text{
+    width: 30rem;
+
+}
+
+.text h5{
+    opacity: .6;
+    text-transform: uppercase;
+}
+
+.text p{
+    line-height: 1.6;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.text a{
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 5px 15px;
+    color: #ffff;
+}
+
+ .text a:hover{
+    background-color: #ffff;
+    color: #000000;
+    transition: all 0.7s ease-out
+}
+
+.subscribe{
+    background-color: black;
+    padding: 5vw 3vw 10vw 3vw ;
+    /* line-height: 1.6; */
+}
+
+.subscribe h5{
+    opacity: .6;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.subscribe h3{
+    text-transform: uppercase;
+    font-size: 15.5px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 330px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: black;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footleft{
+    display: flex;
+    gap: 25px;
+}
+
+.footleft h5{
+   font-size: 15px;
+}
+
+.footright{
+    display: flex;
+    gap: 40px;
+}
+
+.footright a{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* For hover line */
+
+.line{
+    position: relative;
+}
+
+.line::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    
+}
+
+.line:hover::after{
+    animation: line 1.5s ease-in-out;
+}
+
+@keyframes line {
+    0%{
+        width: 0%;
+        left: 0;
+    }
+
+    50%{
+        width: 100%;
+        left: 0;
+    }
+
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
